@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Leaves Requests">
+        <template if:true={noRecordFound}>
+            <c-no-record-found-screen></c-no-record-found-screen>
+        </template>
+        <template if:false={noRecordFound}>
+            <lightning-layout multiple-rows="true" pull-to-boundary="small" class="container">
+                <template for:each={leaveRequests} for:item="leave">
+                    <lightning-layout-item key={leave.Id} size="2">
+                        <c-leave-tile type="request" leave={leave}></c-leave-tile>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_brand" onclick={openModal}>
+                Request Leave
+            </button>
+        </div>
+        <c-modal-form isopen={isModalOpen} onmodalclose={handleModalClose}></c-modal-form>
+    </lightning-card>
+</template>

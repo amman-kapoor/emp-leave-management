@@ -1,0 +1,29 @@
+.slds-modal_compact .slds-modal__container {
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    max-width: 25%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slds-modal_compact .slds-modal__header {
+    background-color: #0070d2;
+    color: #ffffff;
+}
+
+.slds-modal_compact .slds-modal__header_compact {
+    padding: 0.5rem;
+}
+
+.slds-modal_compact .slds-modal__title {
+    font-size: 1.25rem;
+}
+
+.slds-modal_compact .slds-button_icon {
+    margin: 0.25rem;
+    color: #0070d2;
+}
+
+.slds-modal_compact .slds-button_icon:hover {
+    background-color: #e6f7ff;
+}

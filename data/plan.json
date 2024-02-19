@@ -1,0 +1,8 @@
+[
+    {
+        "sobject": "Employee__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": ["Employee__cs.json"]
+    }
+]

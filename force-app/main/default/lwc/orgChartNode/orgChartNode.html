@@ -1,0 +1,16 @@
+<template>
+    <div class="node">
+        <div class="info" onclick={toggleCollapse}>
+            <p>{employee.Name} - {employee.Designation}</p>
+        </div>
+        <template if:true={employee.DirectReports}>
+            <ul class="reports" if:false={isCollapsed}>
+                <template for:each={employee.DirectReports} for:item="directReport">
+                    <li key={directReport.Id}>
+                        <c-org-chart-node employee={directReport}></c-org-chart-node>
+                    </li>
+                </template>
+            </ul>
+        </template>
+    </div>
+</template>

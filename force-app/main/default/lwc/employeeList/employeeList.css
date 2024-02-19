@@ -1,0 +1,41 @@
+.employee-tile {
+	display: block;
+	border: 1px solid #d2955d;
+	border-radius: .25rem;
+	background-color: #fae8d2;
+}
+
+.employee-img{
+	width: 100%;
+}
+
+.employee-card {
+	cursor: pointer;
+	width: 22%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin: 16px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.employee-card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.control-container {
+	display: flex;
+    gap: 10px; 
+}
+
+lightning-input {
+	flex: 1
+}
+
+lightning-combobox {
+    max-width: 300px;
+	top: -20px;
+}
+

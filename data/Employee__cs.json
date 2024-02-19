@@ -1,0 +1,16 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Employee__c",
+                "referenceId": "Employee__cRef1"
+            },
+            "Name": "Aman Kapoor",
+            "Employee_Id__c": "868388",
+            "Designation__c": "SMTS",
+            "Email__c": "aman.kapoor@salesforce.com",
+            "Location__Latitude__s": 45.34276,
+            "Location__Longitude__s": 5.72715
+        }
+    ]
+}

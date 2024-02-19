@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Designation__c</fullName>
+    <description>Designation of the employee</description>
+    <externalId>false</externalId>
+    <label>Designation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMTS</fullName>
+                <default>true</default>
+                <label>AMTS</label>
+            </value>
+            <value>
+                <fullName>MTS</fullName>
+                <default>false</default>
+                <label>MTS</label>
+            </value>
+            <value>
+                <fullName>SMTS</fullName>
+                <default>false</default>
+                <label>SMTS</label>
+            </value>
+            <value>
+                <fullName>LMTS</fullName>
+                <default>false</default>
+                <label>LMTS</label>
+            </value>
+            <value>
+                <fullName>Senior Manager</fullName>
+                <default>false</default>
+                <label>Senior Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Director</fullName>
+                <default>false</default>
+                <label>Senior Director</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<template>
+    <div class="card" style={getBackgroundColor} onclick={handleOpenRecordClick}>
+        <p class="slds-var-m-bottom_xx-small counter" style={getBackgroundColor}>{numOfDays}</p>
+        <div class="mainContainer">
+            <div class="container">
+                <p class="heading">From</p>
+                <p style="font-size: 12px;">{fromDate}</p>
+            </div>
+            <div class="container">
+                <p class="heading">To</p>
+                <p style="font-size: 12px;">{toDate}</p>
+            </div>
+        </div>
+        <div class="container">
+            <p class="heading">Reason</p>
+            <p style="font-size: 12px;">{leave.Reason__c}</p>
+        </div>
+        <template if:true={getControls}>
+            <div class="container">
+                <p class="heading">Employee Name</p>
+                <p style="font-size: 12px;">{leave.User__r.Name}</p>
+            </div>
+            <div class="controls">
+                <button class="slds-button slds-button_success btn" onclick={approveRequest}>
+                    Approve
+                </button>
+                <button class="slds-button slds-button_destructive btn" onclick={rejectRequest}>
+                    Reject
+                </button>
+            </div>
+        </template>
+    </div>
+</template>

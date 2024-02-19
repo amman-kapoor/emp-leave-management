@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Organization Chart" icon-name="standard:employee_organization">
+        <div class="org-tree">
+            <template for:each={employeeHierarchy} for:item="employee">
+                <c-org-chart-node style="flex:1" key={employee.Id} employee={employee}></c-org-chart-node>
+            </template>
+        </div>
+    </lightning-card>
+</template>

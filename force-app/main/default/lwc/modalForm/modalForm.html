@@ -1,0 +1,35 @@
+<template>
+    <template if:true={isopen}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open slds-modal_small slds-modal_compact">
+            <div class="slds-modal__container">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+                    <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Cancel and close</span>
+                </button>
+                <div class="slds-modal__header slds-modal__header_compact">
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Apply Leave</h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}
+                        onsuccess={successHandler} onsubmit={submitHandler} lwc:ref="leaveRequestForm">
+                        <lightning-input-field field-name="User__c">
+                        </lightning-input-field>
+                        <lightning-input-field field-name="From__c"> </lightning-input-field>
+                        <lightning-input-field field-name="To__c"> </lightning-input-field>
+                        <lightning-input-field field-name="Reason__c"> </lightning-input-field>
+                        <div class="slds-var-m-top_medium">
+                            <lightning-button variant="brand" type="submit" label="Save">
+                            </lightning-button>
+                            <lightning-button label="Cancel" class="slds-m-left_small" onclick={closeModal}>
+                            </lightning-button>
+                        </div>
+                    </lightning-record-edit-form>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

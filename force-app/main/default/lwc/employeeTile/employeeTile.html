@@ -1,0 +1,13 @@
+<!-- @format -->
+
+<template>
+  <div onclick={handleOpenRecordClick}>
+    <img src={employee.imageSource} alt="Employee profile" class="employee-img" />
+    <div class="inner-container">
+      <p class="slds-var-m-bottom_xx-small mainPara">{employee.Name}</p>
+      <p class="slds-var-m-bottom_xx-small">{employee.Employee_Id__c}</p>
+      <p class="slds-var-m-bottom_xx-small mail">{employee.Email__c}</p>
+      <p class="slds-var-m-bottom_xx-small">{employee.Designation__c}</p>
+    </div>
+  </div>
+</template>

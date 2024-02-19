@@ -1,0 +1,13 @@
+.inner-container {
+	width: 100%;
+	margin: 8px;
+}
+
+.mail {
+	overflow-wrap: break-word;
+}
+
+.mainPara {
+	font-size: 18px;
+	font-weight: bolder;
+}

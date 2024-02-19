@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Approved Leaves">
+        <template if:true={noRecordFound}>
+            <c-no-record-found-screen></c-no-record-found-screen>
+        </template>
+        <template if:false={noRecordFound}>
+            <lightning-layout multiple-rows="true" pull-to-boundary="small" class="container">
+                <template for:each={approvedLeaves} for:item="leave">
+                    <lightning-layout-item key={leave.Id} size="6">
+                        <c-leave-tile type="approved" leave={leave}></c-leave-tile>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+    </lightning-card>
+</template>
